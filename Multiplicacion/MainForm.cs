@@ -57,5 +57,15 @@ namespace Multiplicacion
 			res=num1-num2;
 			MessageBox.Show("El resultado es: "+res);			
 		}
+		
+		void BtnModClick(object sender, EventArgs e)
+		{
+			double num1=Convert.ToDouble(txtbNum1.Text), num2=Convert.ToDouble(txtbNum2.Text);
+			if (num1<=0 || num2<=0){
+				MessageBox.Show("No se puede dividir entre cero.");
+				return;
+			}
+			MessageBox.Show("El resultado es: "+ num1%num2);				
+		}
 	}
 }

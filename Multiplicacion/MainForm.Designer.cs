@@ -44,6 +44,7 @@ namespace Multiplicacion
 			this.btnDividir = new System.Windows.Forms.Button();
 			this.btnRestar = new System.Windows.Forms.Button();
 			this.btnSumar = new System.Windows.Forms.Button();
+			this.btnMod = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -116,11 +117,22 @@ namespace Multiplicacion
 			this.btnSumar.UseVisualStyleBackColor = true;
 			this.btnSumar.Click += new System.EventHandler(this.BtnSumarClick);
 			// 
+			// btnMod
+			// 
+			this.btnMod.Location = new System.Drawing.Point(48, 116);
+			this.btnMod.Name = "btnMod";
+			this.btnMod.Size = new System.Drawing.Size(75, 23);
+			this.btnMod.TabIndex = 8;
+			this.btnMod.Text = "Modulo";
+			this.btnMod.UseVisualStyleBackColor = true;
+			this.btnMod.Click += new System.EventHandler(this.BtnModClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(175, 127);
+			this.ClientSize = new System.Drawing.Size(175, 147);
+			this.Controls.Add(this.btnMod);
 			this.Controls.Add(this.btnSumar);
 			this.Controls.Add(this.btnRestar);
 			this.Controls.Add(this.btnDividir);
@@ -134,6 +146,7 @@ namespace Multiplicacion
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnMod;
 		private System.Windows.Forms.Button btnSumar;
 		private System.Windows.Forms.Button btnRestar;
 		private System.Windows.Forms.Button btnDividir;
