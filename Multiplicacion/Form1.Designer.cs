@@ -36,6 +36,7 @@ namespace Multiplicacion
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtbA = new System.Windows.Forms.TextBox();
 			this.txtbB = new System.Windows.Forms.TextBox();
@@ -47,11 +48,16 @@ namespace Multiplicacion
 			this.operacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.basicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.valorDeX1YX2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
+			this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(14, 30);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
@@ -60,20 +66,23 @@ namespace Multiplicacion
 			// 
 			// txtbA
 			// 
-			this.txtbA.Location = new System.Drawing.Point(74, 27);
+			this.txtbA.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbA.Location = new System.Drawing.Point(83, 27);
 			this.txtbA.Name = "txtbA";
-			this.txtbA.Size = new System.Drawing.Size(100, 20);
+			this.txtbA.Size = new System.Drawing.Size(100, 21);
 			this.txtbA.TabIndex = 1;
 			// 
 			// txtbB
 			// 
-			this.txtbB.Location = new System.Drawing.Point(240, 27);
+			this.txtbB.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbB.Location = new System.Drawing.Point(252, 27);
 			this.txtbB.Name = "txtbB";
-			this.txtbB.Size = new System.Drawing.Size(100, 20);
+			this.txtbB.Size = new System.Drawing.Size(100, 21);
 			this.txtbB.TabIndex = 3;
 			// 
 			// label2
 			// 
+			this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(180, 30);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
@@ -82,13 +91,15 @@ namespace Multiplicacion
 			// 
 			// txtbC
 			// 
-			this.txtbC.Location = new System.Drawing.Point(158, 59);
+			this.txtbC.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbC.Location = new System.Drawing.Point(167, 61);
 			this.txtbC.Name = "txtbC";
-			this.txtbC.Size = new System.Drawing.Size(100, 20);
+			this.txtbC.Size = new System.Drawing.Size(100, 21);
 			this.txtbC.TabIndex = 5;
 			// 
 			// label3
 			// 
+			this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.Location = new System.Drawing.Point(98, 62);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(100, 23);
@@ -97,7 +108,8 @@ namespace Multiplicacion
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(148, 88);
+			this.btnCalcular.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCalcular.Location = new System.Drawing.Point(149, 90);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(75, 23);
 			this.btnCalcular.TabIndex = 6;
@@ -111,7 +123,7 @@ namespace Multiplicacion
 									this.operacionesToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(363, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(375, 24);
 			this.menuStrip1.TabIndex = 7;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -137,11 +149,34 @@ namespace Multiplicacion
 			this.valorDeX1YX2ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
 			this.valorDeX1YX2ToolStripMenuItem.Text = "Valor de x1 y x2";
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(14, 63);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(78, 85);
+			this.pictureBox1.TabIndex = 8;
+			this.pictureBox1.TabStop = false;
+			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox2.Location = new System.Drawing.Point(274, 62);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(89, 86);
+			this.pictureBox2.TabIndex = 9;
+			this.pictureBox2.TabStop = false;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(363, 125);
+			this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			this.ClientSize = new System.Drawing.Size(375, 160);
+			this.Controls.Add(this.pictureBox2);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.btnCalcular);
 			this.Controls.Add(this.txtbC);
 			this.Controls.Add(this.label3);
@@ -155,9 +190,13 @@ namespace Multiplicacion
 			this.Text = "Valores";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox2;
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem valorDeX1YX2ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem basicasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;

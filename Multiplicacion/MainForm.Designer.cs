@@ -37,6 +37,7 @@ namespace Multiplicacion
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtbNum1 = new System.Windows.Forms.TextBox();
@@ -51,12 +52,15 @@ namespace Multiplicacion
 			this.operacionesBasicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.básicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.valorDeX1YX2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.menuStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(12, 33);
+			this.label1.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(60, 36);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 0;
@@ -64,7 +68,8 @@ namespace Multiplicacion
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(12, 60);
+			this.label2.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(60, 63);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
 			this.label2.TabIndex = 1;
@@ -72,21 +77,24 @@ namespace Multiplicacion
 			// 
 			// txtbNum1
 			// 
-			this.txtbNum1.Location = new System.Drawing.Point(64, 30);
+			this.txtbNum1.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbNum1.Location = new System.Drawing.Point(126, 33);
 			this.txtbNum1.Name = "txtbNum1";
-			this.txtbNum1.Size = new System.Drawing.Size(100, 20);
+			this.txtbNum1.Size = new System.Drawing.Size(100, 22);
 			this.txtbNum1.TabIndex = 2;
 			// 
 			// txtbNum2
 			// 
-			this.txtbNum2.Location = new System.Drawing.Point(64, 57);
+			this.txtbNum2.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtbNum2.Location = new System.Drawing.Point(126, 60);
 			this.txtbNum2.Name = "txtbNum2";
-			this.txtbNum2.Size = new System.Drawing.Size(100, 20);
+			this.txtbNum2.Size = new System.Drawing.Size(100, 22);
 			this.txtbNum2.TabIndex = 3;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 86);
+			this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.Location = new System.Drawing.Point(74, 89);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 4;
@@ -96,7 +104,8 @@ namespace Multiplicacion
 			// 
 			// btnDividir
 			// 
-			this.btnDividir.Location = new System.Drawing.Point(88, 86);
+			this.btnDividir.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnDividir.Location = new System.Drawing.Point(150, 89);
 			this.btnDividir.Name = "btnDividir";
 			this.btnDividir.Size = new System.Drawing.Size(75, 23);
 			this.btnDividir.TabIndex = 5;
@@ -106,7 +115,8 @@ namespace Multiplicacion
 			// 
 			// btnRestar
 			// 
-			this.btnRestar.Location = new System.Drawing.Point(88, 109);
+			this.btnRestar.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnRestar.Location = new System.Drawing.Point(150, 112);
 			this.btnRestar.Name = "btnRestar";
 			this.btnRestar.Size = new System.Drawing.Size(75, 23);
 			this.btnRestar.TabIndex = 6;
@@ -116,7 +126,8 @@ namespace Multiplicacion
 			// 
 			// btnSumar
 			// 
-			this.btnSumar.Location = new System.Drawing.Point(12, 109);
+			this.btnSumar.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnSumar.Location = new System.Drawing.Point(74, 112);
 			this.btnSumar.Name = "btnSumar";
 			this.btnSumar.Size = new System.Drawing.Size(75, 23);
 			this.btnSumar.TabIndex = 7;
@@ -126,7 +137,8 @@ namespace Multiplicacion
 			// 
 			// btnMod
 			// 
-			this.btnMod.Location = new System.Drawing.Point(48, 133);
+			this.btnMod.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnMod.Location = new System.Drawing.Point(110, 136);
 			this.btnMod.Name = "btnMod";
 			this.btnMod.Size = new System.Drawing.Size(75, 23);
 			this.btnMod.TabIndex = 8;
@@ -145,7 +157,7 @@ namespace Multiplicacion
 									this.operacionesBasicasToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(170, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(242, 24);
 			this.menuStrip1.TabIndex = 10;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -171,11 +183,23 @@ namespace Multiplicacion
 			this.valorDeX1YX2ToolStripMenuItem.Text = "Valor de x1 y x2";
 			this.valorDeX1YX2ToolStripMenuItem.Click += new System.EventHandler(this.ValorDeX1YX2ToolStripMenuItemClick);
 			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(12, 141);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(84, 59);
+			this.pictureBox1.TabIndex = 11;
+			this.pictureBox1.TabStop = false;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(170, 167);
+			this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+			this.ClientSize = new System.Drawing.Size(242, 207);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.btnMod);
 			this.Controls.Add(this.btnSumar);
@@ -191,9 +215,11 @@ namespace Multiplicacion
 			this.Text = "Multiplicacion";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.ToolStripMenuItem valorDeX1YX2ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem básicasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem operacionesBasicasToolStripMenuItem;
