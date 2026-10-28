@@ -36,6 +36,7 @@ namespace Multiplicacion
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.txtbNum1 = new System.Windows.Forms.TextBox();
@@ -45,11 +46,17 @@ namespace Multiplicacion
 			this.btnRestar = new System.Windows.Forms.Button();
 			this.btnSumar = new System.Windows.Forms.Button();
 			this.btnMod = new System.Windows.Forms.Button();
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.operacionesBasicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.básicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.valorDeX1YX2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(12, 16);
+			this.label1.Location = new System.Drawing.Point(12, 33);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 0;
@@ -57,7 +64,7 @@ namespace Multiplicacion
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(12, 43);
+			this.label2.Location = new System.Drawing.Point(12, 60);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
 			this.label2.TabIndex = 1;
@@ -65,21 +72,21 @@ namespace Multiplicacion
 			// 
 			// txtbNum1
 			// 
-			this.txtbNum1.Location = new System.Drawing.Point(64, 13);
+			this.txtbNum1.Location = new System.Drawing.Point(64, 30);
 			this.txtbNum1.Name = "txtbNum1";
 			this.txtbNum1.Size = new System.Drawing.Size(100, 20);
 			this.txtbNum1.TabIndex = 2;
 			// 
 			// txtbNum2
 			// 
-			this.txtbNum2.Location = new System.Drawing.Point(64, 40);
+			this.txtbNum2.Location = new System.Drawing.Point(64, 57);
 			this.txtbNum2.Name = "txtbNum2";
 			this.txtbNum2.Size = new System.Drawing.Size(100, 20);
 			this.txtbNum2.TabIndex = 3;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 69);
+			this.button1.Location = new System.Drawing.Point(12, 86);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 4;
@@ -89,7 +96,7 @@ namespace Multiplicacion
 			// 
 			// btnDividir
 			// 
-			this.btnDividir.Location = new System.Drawing.Point(88, 69);
+			this.btnDividir.Location = new System.Drawing.Point(88, 86);
 			this.btnDividir.Name = "btnDividir";
 			this.btnDividir.Size = new System.Drawing.Size(75, 23);
 			this.btnDividir.TabIndex = 5;
@@ -99,7 +106,7 @@ namespace Multiplicacion
 			// 
 			// btnRestar
 			// 
-			this.btnRestar.Location = new System.Drawing.Point(88, 92);
+			this.btnRestar.Location = new System.Drawing.Point(88, 109);
 			this.btnRestar.Name = "btnRestar";
 			this.btnRestar.Size = new System.Drawing.Size(75, 23);
 			this.btnRestar.TabIndex = 6;
@@ -109,7 +116,7 @@ namespace Multiplicacion
 			// 
 			// btnSumar
 			// 
-			this.btnSumar.Location = new System.Drawing.Point(12, 92);
+			this.btnSumar.Location = new System.Drawing.Point(12, 109);
 			this.btnSumar.Name = "btnSumar";
 			this.btnSumar.Size = new System.Drawing.Size(75, 23);
 			this.btnSumar.TabIndex = 7;
@@ -119,7 +126,7 @@ namespace Multiplicacion
 			// 
 			// btnMod
 			// 
-			this.btnMod.Location = new System.Drawing.Point(48, 116);
+			this.btnMod.Location = new System.Drawing.Point(48, 133);
 			this.btnMod.Name = "btnMod";
 			this.btnMod.Size = new System.Drawing.Size(75, 23);
 			this.btnMod.TabIndex = 8;
@@ -127,11 +134,49 @@ namespace Multiplicacion
 			this.btnMod.UseVisualStyleBackColor = true;
 			this.btnMod.Click += new System.EventHandler(this.BtnModClick);
 			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.operacionesBasicasToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(170, 24);
+			this.menuStrip1.TabIndex = 10;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// operacionesBasicasToolStripMenuItem
+			// 
+			this.operacionesBasicasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.básicasToolStripMenuItem,
+									this.valorDeX1YX2ToolStripMenuItem});
+			this.operacionesBasicasToolStripMenuItem.Name = "operacionesBasicasToolStripMenuItem";
+			this.operacionesBasicasToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+			this.operacionesBasicasToolStripMenuItem.Text = "Operaciones";
+			// 
+			// básicasToolStripMenuItem
+			// 
+			this.básicasToolStripMenuItem.Name = "básicasToolStripMenuItem";
+			this.básicasToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+			this.básicasToolStripMenuItem.Text = "Básicas";
+			// 
+			// valorDeX1YX2ToolStripMenuItem
+			// 
+			this.valorDeX1YX2ToolStripMenuItem.Name = "valorDeX1YX2ToolStripMenuItem";
+			this.valorDeX1YX2ToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+			this.valorDeX1YX2ToolStripMenuItem.Text = "Valor de x1 y x2";
+			this.valorDeX1YX2ToolStripMenuItem.Click += new System.EventHandler(this.ValorDeX1YX2ToolStripMenuItemClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(175, 147);
+			this.ClientSize = new System.Drawing.Size(170, 167);
+			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.btnMod);
 			this.Controls.Add(this.btnSumar);
 			this.Controls.Add(this.btnRestar);
@@ -141,11 +186,19 @@ namespace Multiplicacion
 			this.Controls.Add(this.txtbNum1);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "Multiplicacion";
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem valorDeX1YX2ToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem básicasToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem operacionesBasicasToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
 		private System.Windows.Forms.Button btnMod;
 		private System.Windows.Forms.Button btnSumar;
 		private System.Windows.Forms.Button btnRestar;

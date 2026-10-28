@@ -67,5 +67,12 @@ namespace Multiplicacion
 			}
 			MessageBox.Show("El resultado es: "+ num1%num2);				
 		}
+		
+		void ValorDeX1YX2ToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form1 f = new Form1();
+			f.Show();
+			this.Hide();
+		}
 	}
 }
